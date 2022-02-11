@@ -3,7 +3,7 @@
   <div class="view">
     <div class="list">
       <div class="header">
-        <img v-bind:src="'/' + restuarant.path" />
+        <img alt="delicious dish" v-bind:src="'/' + restuarant.path" />
         <h4>{{restuarant.name}}</h4>
         <p>{{restuarant.desc}}</p>
         <p>Min: {{restuarant.min_price}} €</p>
@@ -16,7 +16,7 @@
             <p>{{item.desc}}</p>
             <p class="price">{{item.price}} €</p>
           </div>
-          <img src="/rest1.jpg" />
+          <img alt="delicious food" src="/rest1.jpg" />
           <button class="plus">
             <svg
               viewBox="0 0 24 24"

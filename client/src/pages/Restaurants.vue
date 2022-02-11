@@ -6,7 +6,7 @@
       v-for="item in items"
       :key="item.id"
     >
-      <img v-bind:src="'/' + item.path" />
+      <img alt="delicious food" v-bind:src="'/' + item.path" />
       <div class="ml-1 detail container">
         <h4>{{ item.name }}</h4>
         <p class="description">{{ item.desc }}</p>
@@ -56,10 +56,10 @@ export default {
 
 .detail {
   /*  padding: 5px; */
-   display: flex;
- flex-direction: column;
- justify-content: space-around;
- margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
 }
 
 p {
